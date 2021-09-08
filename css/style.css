@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.header {
+    height: 70px;
+}
+
+.logo img {
+    height: 70px;
+    width: 153px;
+}
+
+.logo {
+    height: 70px;
+}
+
