@@ -5,7 +5,42 @@ body {
 }
 
 .header {
+    display: flex;
+    justify-content: space-around;
     height: 70px;
+    width: 100%;
+    align-items: center;
+    background-color: #e5e5e5;
+}
+
+.nav-bar{
+    display: flex;
+    width: 60%;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+.nav-item {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 23px;
+    height: 70px;
+    font-family: 'Bebas Neue', cursive;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.lista a {
+    text-decoration: none;
+    color: black;
 }
 
 .logo img {
@@ -15,5 +50,12 @@ body {
 
 .logo {
     height: 70px;
+    width: 15%;
+}
+
+.buscador {
+    width: 25%;
+    display: flex;
+    justify-content: center;
 }
 
