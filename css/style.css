@@ -1,61 +1,100 @@
-body {
-    background-color: aqua;
+* {
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
-.header {
+body {
+    background-color: #141414;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+.header .contenedor{
     display: flex;
-    justify-content: space-around;
-    height: 70px;
-    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    background-color: #e5e5e5;
+    height: 100px;
 }
 
-.nav-bar{
-    display: flex;
-    width: 60%;
+    /* Logo */
+
+header .logotipo {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    color: rgb(7, 17, 161);
+    font-size: 40px;
 }
 
-.nav-bar a {
+    /* Nav */
+
+header nav a {
+    color: #aaa;
     text-decoration: none;
+    margin-right: 30px;
 }
 
-.nav-item {
-    list-style: none;
+header nav a:hover {
+    color: #fff;
+}
+
+    /* Buscador */
+
+.buscador input{
+    width: 40em;
+    margin:10px;
+    padding:10px 16px;
+    border-radius:32px;
+    border: 2px solid #fff;
+}
+
+.buscador input:hover {
+    border:2px solid #c50f0f;
+}
+
+.buscador button {
+    background-color: #fff;
+    color: #141414;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 90px;
+}
+
+.buscador button:hover {
+    border:2px solid #c50f0f;
+}
+
+  /* Main */
+
+.banner{
+    min-height: 400px;
+    background-image: url(../img/backdrop.jpg);
+    background-position: center center;
+    margin-bottom: 50px;
+}
+
+/* Peliculas recomendadas */
+
+.peliculas{
     display: flex;
-    align-items: center;
-    font-size: 23px;
-    height: 70px;
-    font-family: 'Bebas Neue', cursive;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.peliculas article{
+    width: 270px;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
+}
+.fotoPelicula img{
+    width: 250px;
 }
 
-.lista {
-    list-style: none;
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-}
+/* Media querys */
 
-.lista a {
-    text-decoration: none;
-    color: black;
-}
 
-.logo img {
-    height: 70px;
-    width: 153px;
-}
-
-.logo {
-    height: 70px;
-    width: 15%;
-}
-
-.buscador {
-    width: 25%;
-    display: flex;
-    justify-content: center;
-}
 

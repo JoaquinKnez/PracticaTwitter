@@ -5,40 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" rel="stylesheet">
     <title>Pelis Ya</title>
 </head>
 <body>
     <header class="header">
-        <div class="logo">
-            <img src="./img/logo.png" alt="Imagen Logo">
+        <div class="contenedor">
+            <h2 class="logotipo">pelisYa</h2>
+            <!-- Buscador -->
+            <div class="buscador">
+                <form action="./search-results.html">
+                        <input type="text" name="buscador" placeholder="Buscador...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+            <!-- Nav -->
+                <nav class="nav-bar">
+                    <a href="index.html">Home</a>
+                    <a href="/detail-movie.html">Generos</a>
+                    <a href="detail-serie.html">Series</a>
+                    <a href="favorite.html">Favoritos</a>
+                </nav>
         </div>
-    <!-- Nav -->
-
-    <nav class="nav-bar">
-        <ul class="lista">
-            <li class="nav-item">
-                <a href="/">Home</a>
-            </li>
-            <li class="nav-item">
-                <a href="/detail-movie.html">Peliculas</a>
-            </li>
-            <li class="nav-item">
-                <a href="detail-serie.html">Series</a>
-            </li>
-            <li class="nav-item">
-                <a href="favorite.html">Favoritos</a>
-            </li>
-        </ul>
-    </nav>
-
-    <div class="buscador">
-        <label for=""></label>
-        <input type="search" placeholder="Buscador...">
-    </div>
-    
     </header>
+
+    <main>
+        <section class="banner"></section>
+        <section class="peliculas">
+            <article>
+                <div class="fotoPelicula">
+                    <img src="./img/poster 1.jpg" alt="Foto 1">
+                </div>
+                <h2>Lorem ipsum amet</h2>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
