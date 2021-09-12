@@ -10,7 +10,7 @@ body {
 }
 
 .contenedor {
-    width: 90%;
+    width: 95%;
     margin: auto;
 }
 
@@ -83,18 +83,26 @@ header nav a:hover {
 .peliculas{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .peliculas article{
-    width: 270px;
+    width: 210px;
     margin-bottom: 30px;
     background-color: blanchedalmond;
+    text-align: center;
+    padding: 5px;
 }
-.fotoPelicula img{
-    width: 250px;
+.card img{
+    width: 200px;
+    height: 300px;
 }
 
-/* Media querys */
+.card h2 {
+    font-size: 20px;
+    padding: 10px;
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(7, 17, 161);
+}
 
 
 /* footer */
