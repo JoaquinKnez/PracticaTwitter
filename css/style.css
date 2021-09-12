@@ -82,7 +82,7 @@ header nav a:hover {
 
 .peliculas{
     display: flex;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .peliculas article{
@@ -97,4 +97,71 @@ header nav a:hover {
 /* Media querys */
 
 
+/* footer */
+
+.footer{
+    display: flex;
+    align-items: center;
+}
+
+footer .sectionUno .logotipo{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    color: rgb(7, 17, 161);
+    font-size: 40px;
+    justify-content: left;
+
+}
+
+footer .sectionUno{
+    width: 33.3vw;
+    justify-content: left;
+    align-items: center;
+}
+
+footer .sectionDos{
+    width: 33.3vw;
+    justify-content:center;
+    text-align: center;
+/* no me tomaba el justify content center para centrar la etiqueta a, por eso utilicé text align */
+}
+
+footer .sectionTres .mapaFooter{
+    font-family: 'Open Sans', sans-serif;
+    color: #aaa;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer .sectionTres .mapa{
+    width: 500px;
+    height: 350px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+footer .sectionDos .sectionDosTexto{
+    font-family: 'Open Sans', sans-serif;
+    color: #aaa;
+    font-size: 20px;
+    text-align: center;
+}
+
+footer .sectionDos .nombresSectionDos a{
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    font-size: 15px;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    
+}
+
+footer .sectionDos a{
+    align-items: flex-end;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: #aaa;
+    font-size: 20px;
+}
 
