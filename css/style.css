@@ -82,7 +82,7 @@ header nav a:hover {
 
 .peliculas{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     justify-content: space-between;
 }
 .peliculas article{
