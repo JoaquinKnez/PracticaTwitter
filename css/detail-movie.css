@@ -1,0 +1,70 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #141414;
+    font-family: 'Open Sans', sans-serif;
+}
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+    /* Logo */
+
+header .logotipo {
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    color: rgb(7, 17, 161);
+    font-size: 40px;
+}
+
+    /* Nav */
+
+header nav a {
+    color: #aaa;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+    /* Buscador */
+
+.buscador input{
+    width: 40em;
+    margin:10px;
+    padding:10px 16px;
+    border-radius:32px;
+    border: 2px solid #fff;
+}
+
+.buscador input:hover {
+    border:2px solid #c50f0f;
+}
+
+.buscador button {
+    background-color: #fff;
+    color: #141414;
+    width: 40px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 90px;
+}
+
+.buscador button:hover {
+    border:2px solid #c50f0f;
+}
