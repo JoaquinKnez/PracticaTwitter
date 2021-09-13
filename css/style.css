@@ -25,7 +25,7 @@ body {
 
     /* Logo */
 
-header .logotipo {
+.logotipo {
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
     color: rgb(7, 17, 161);
@@ -78,7 +78,7 @@ header nav a:hover {
     min-height: 400px;
     background-image: url(../img/backdrop.jpg);
     background-position: center center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 /* Peliculas recomendadas */
@@ -107,72 +107,51 @@ header nav a:hover {
     color: rgb(7, 17, 161);
 }
 
-
-/* footer */
-
-.footer{
+.titleSection {
     display: flex;
-    align-items: center;
-}
-
-footer .sectionUno .logotipo{
+    justify-content: center;
+    font-size: 30px;
     font-family: 'Permanent Marker', cursive;
-    font-weight: normal;
-    color: rgb(7, 17, 161);
-    font-size: 40px;
-    justify-content: left;
-
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #5f84f2;
 }
 
-footer .sectionUno{
-    width: 33.3vw;
-    justify-content: left;
-    align-items: center;
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background: #5b5959;
+    padding: 20px 10px 20px 10px;
+    margin-top: 30px;
 }
 
-footer .sectionDos{
-    width: 33.3vw;
-    justify-content:center;
-    text-align: center;
-/* no me tomaba el justify content center para centrar la etiqueta a, por eso utilicé text align */
+.footer h2 {
+    align-self: center;
+    color: black;
 }
 
-footer .sectionTres .mapaFooter{
-    font-family: 'Open Sans', sans-serif;
-    color: #aaa;
-    font-size: 20px;
-    text-align: center;
-}
-
-footer .sectionTres .mapa{
-    width: 500px;
-    height: 350px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-}
-
-footer .sectionDos .sectionDosTexto{
-    font-family: 'Open Sans', sans-serif;
-    color: #aaa;
-    font-size: 20px;
-    text-align: center;
-}
-
-footer .sectionDos .nombresSectionDos a{
-    font-family: 'Open Sans', sans-serif;
-    color: white;
-    font-size: 15px;
-    list-style: none;
-    text-align: center;
+.conocenos a {
+    color: #d4d1d1;
     text-decoration: none;
-    
+    margin-right: 30px;
 }
 
-footer .sectionDos a{
-    align-items: flex-end;
-    text-decoration: none;
-    font-family: 'Open Sans', sans-serif;
-    color: #aaa;
-    font-size: 20px;
+.conocenos a:hover {
+    color: #fff;
 }
 
+.conocenos {
+    text-align: center;
+    align-self: center;
+}
+
+.conocenos h2 {
+    margin: 10px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.mapa {
+    width: auto;
+    height: auto;
+}
