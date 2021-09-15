@@ -1,0 +1,12 @@
+
+
+.tituloFavoritos{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    color:  #5f84f2;
+    font-size: 40px;
+    text-align: center;
+    margin: 30px;
+}
+/* el resto de las caracteristicas de css están vinculadas al style.css (lo mismo sucede con el footer y header) */
+
