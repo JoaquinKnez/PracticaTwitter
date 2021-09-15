@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-family: 'Permanent Marker', cursive;
+    font-weight: normal;
+    color:  #5f84f2;
+    font-size: 40px;
+    text-align: center;
+}
+.seccionGeneros {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    margin-bottom: 50px;
+}
+
+.seccionGeneros .categorias a{
+    border: 3px rgb(7, 17, 161) solid;
+    background-color: blanchedalmond;
+    font-size:  30px;
+    padding: 20px;
+    text-decoration: none;
+    font-family: 'Permanent Marker', cursive;;
+    color:  rgb(7, 17, 161);/* #5f84f2 */;
+
+}
+.seccionGenerosSeries{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Footer géneros (tiene un margin top diferente al del resto de las páginas (difiere del footer general) */
+.footerGeneros {
+    display: flex;
+    justify-content: space-between;
+    background: #5b5959;
+    padding: 20px 10px 20px 10px;
+    margin-top: 200px;
+
+}
+
+.footerGeneros h2 {
+    align-self: center;
+    color: black;
+}
+
+.conocenos a {
+    color: #d4d1d1;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.conocenos a:hover {
+    color: #fff;
+}
+
+.conocenos {
+    text-align: center;
+    align-self: center;
+}
+
+.conocenos h2 {
+    margin: 10px;
+    font-family: 'Permanent Marker', cursive;
+    color: black;
+}
+
+.mapa {
+    width: auto;
+    height: auto;
+}
