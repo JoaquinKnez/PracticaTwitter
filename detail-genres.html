@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Twitter</title>
     <link rel="stylesheet" href="./css/detail-genres.css">
     <link rel="stylesheet" href="./css/style.css"> <!-- linkeado al css del index para las propiedades del footer -->
-    <!-- Google fonts -->
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,7 +21,7 @@
 <body>
     <header class="header">
         <div class="contenedor">
-            <h2 class="logotipo">pelisYa</h2>
+            <a href="index.html"><h2 class="logotipo">pelisYa</h2></a>
             <!-- Buscador -->
             <div class="buscador">
                 <form action="./search-results.html">
@@ -35,12 +33,48 @@
                 <nav class="nav-bar">
                     <a href="index.html">Home</a>
                     <a href="genres.html">Generos</a>
-                    <a href="#Series">Series</a>
-                    <a href="#Peliculas">Peliculas</a>
+                    <a href="detail-serie.html">Series</a>
+                    <a href="detail-movie.html">Peliculas</a>
                     <a href="favorite.html">Favoritos</a>
                 </nav>
         </div>
     </header>
+
+    <main>
+        <span class="titleSection">Accion</span>
+        <section class="peliculas">
+            <article>
+                <div class="card">
+                    <img src="./img/accion 2.jpg" alt="Foto 1">
+                    <h2>Rehén Rebelde</h2>
+                </div>
+            </article>
+            <article>
+                <div class="card">
+                    <img src="./img/poster 2.jpg" alt="Foto 1">
+                    <h2>No respires</h2>
+                </div>
+            </article>
+            <article>
+                <div class="card">
+                    <img src="./img/poster 3.jpg" alt="Foto 1">
+                    <h2>Black Widow</h2>
+                </div>
+            </article>
+            <article>
+                <div class="card">
+                    <img src="./img/accion 1.jpg" alt="Foto 1">
+                    <h2>Mortal Kombat</h2>
+                </div>
+            </article>
+            <article>
+                <div class="card">
+                    <img src="./img/poster 5.jpg" alt="Foto 1">
+                    <h2>Fast and Furious</h2>
+                </div>
+            </article>
+        </section>
+    </main>
 
     <footer class="footer">
         <h2 class="logotipo">pelisYa</h2>
