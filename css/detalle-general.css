@@ -3,7 +3,7 @@
     justify-content: space-between;
 }
 
-img{
+.bannerSeries img{
     width: auto;
     height: 500px;
 }
@@ -73,7 +73,12 @@ p{
         flex-direction: column;
     }
     img{
+        width: 300px !important;
+        height: auto !important;
+    }
+
+    .descripcionSeries{
         width: 300px;
-        height: auto;
+        margin-left: 41px;
     }
 }
