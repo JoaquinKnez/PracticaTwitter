@@ -1,4 +1,3 @@
-
 .titulosGeneros{
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
@@ -8,7 +7,6 @@
     margin-bottom: 50px;
 }
 .seccionGeneros {
-    list-style: none;
     display: flex;
     justify-content: space-around;
     margin: 30px;
@@ -25,11 +23,6 @@
     color:  rgb(7, 17, 161);
 
 }
-.seccionGenerosSeries{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
 
 /* Media querys */
 
@@ -44,3 +37,4 @@
         margin: 10vw;
     }
        
+}

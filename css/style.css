@@ -130,8 +130,8 @@ body {
 }
 
 .card img{
-    width: 200px;
-    height: 300px;
+    width: 200px; /* 10px menos que el contenedor, asi queda lindo */
+    height: 300px; /* la altura de la imagen le ajusta la altura al contenedor */
 }
 
 .card h2 {
