@@ -40,12 +40,17 @@
 @media screen and (max-width: 800px) {
     .seccionGeneros {
         flex-direction: column;
-        justify-content: center;
-        text-align: center} 
+        margin: 0px 20px 0px 20px;
+    } 
     
 
    .categorias{
         margin: 10vw;
-        width: 70vw} 
+        width: 70vw
+    } 
+
+    .titulosGeneros{
+        margin-bottom: 0px;
+    }
       
 }

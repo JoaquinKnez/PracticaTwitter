@@ -115,6 +115,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
 .card{
     width: 210px;
     margin-bottom: 30px;
