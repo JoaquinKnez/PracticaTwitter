@@ -1,4 +1,3 @@
-
 .titulosGeneros{
     font-family: 'Permanent Marker', cursive;
     font-weight: normal;
@@ -20,6 +19,7 @@
     font-family: 'Permanent Marker', cursive;;
     color:  rgb(7, 17, 161); 
 }
+
 .categorias{
     width: 210px;
     margin-bottom: 30px;
@@ -34,19 +34,18 @@
     transform: translateY(-10px); /* cuando el cursor pasa por encima, la card se va para arriba 10px */
 }
 
+
 /* Media querys */
 
 @media screen and (max-width: 800px) {
     .seccionGeneros {
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-    }
+        text-align: center} 
+    
 
    .categorias{
         margin: 10vw;
-        width: 70vw;
-    }
-
-
-       
+        width: 70vw} 
+      
+}

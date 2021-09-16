@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/detail-movie.css">
+    <link rel="stylesheet" href="./css/detalle-general.css">
     <link rel="stylesheet" href="./css/style.css"> <!-- linkeado al css del index para las propiedades del footer -->
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,28 +29,52 @@
                     </form>
                 </div>
             <!-- Nav -->
-                <nav class="nav-bar">
-                    <a href="index.html">Home</a>
-                    <a href="genres.html">Generos</a>
-                    <a href="detail-serie.html">Series</a>
-                    <a href="detail-movie.html">Peliculas</a>
-                    <a href="favorite.html">Favoritos</a>
-                </nav>
+            <nav class="nav-bar">
+                <ul class="listaNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="genres.html">Generos</a></li>
+                    <li><a href="detail-serie.html">Series</a></li>
+                    <li><a href="detail-movie.html">Peliculas</a></li>
+                    <li><a href="favorite.html">Favoritos</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
+
+    <main class="mainSeries">
+        <section class="bannerSeries">
+            <img src="./img/poster 1.jpg" alt="Space Jam">
+        </section>
+        <section class="descripcionSeries">
+            <article class="descripcionArticulo">
+                <h2 class="tituloArticulo">Space Jam</h2>
+                <ul class="ulArticulo">
+                    <li>Calificación:7.7</li>
+                    <li>Duración: 115 minutos</li>
+                    <li>Fecha de Estreno:2021-07-15</li>
+                    <li>Género: Infantil/Comedia</li>
+                </ul>
+                <p>La superestrella de la NBA LeBron James y su hijo quedan atrapados accidentalmente en un mundo que contiene todas las historias y personajes de Warner Bros., bajo el control de una fuerza todopoderosa y defectuosa que se llama AI G </p>
+                <form action="./favorite.html" class="direccionFavoritos">
+                    <button>Añadir a favoritos</button>
+                </form>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <h2 class="logotipo">pelisYa</h2>
+        <!-- Conocenos -->
+        <div class="conocenos">
+            <h2>¡Conoce a los creadores!</h2>
+            <a href="https://www.linkedin.com/in/ivan-fischman-69337418b/" target="_blank">Ivan Fischman</a>
+            <a href="https://www.linkedin.com/in/juana-mendonca-a6882a207/" target="_blank">Juana Mendonca</a>
+            <a href="https://www.linkedin.com/in/joaquin-knez-8a9a81207/" target="_blank">Joaquin Knez</a>
+        </div>
+        <!-- Mapa -->
+        <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1865353530457!2d-58.44585618459348!3d-34.548832162103274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb436efe09303%3A0xfb39818e7624ac76!2sDigital%20House!5e0!3m2!1ses!2sar!4v1631387260724!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </footer>
 </body>
 </html>
 
-    <footer class="footer">
-            <h2 class="logotipo">pelisYa</h2>
-            <!-- Conocenos -->
-            <div class="conocenos">
-                <h2>¡Conoce a los creadores!</h2>
-                <a href="https://www.linkedin.com/in/ivan-fischman-69337418b/" target="_blank">Ivan Fischman</a>
-                <a href="https://www.linkedin.com/in/juana-mendonca-a6882a207/" target="_blank">Juana Mendonca</a>
-                <a href="https://www.linkedin.com/in/joaquin-knez-8a9a81207/" target="_blank">Joaquin Knez</a>
-            </div>
-            <!-- Mapa -->
-            <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1865353530457!2d-58.44585618459348!3d-34.548832162103274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb436efe09303%3A0xfb39818e7624ac76!2sDigital%20House!5e0!3m2!1ses!2sar!4v1631387260724!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </footer>
-    </header>
+    

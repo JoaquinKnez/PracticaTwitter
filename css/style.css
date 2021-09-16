@@ -37,17 +37,32 @@ body {
 
     /* Nav */
 
-header nav a {
-    color: #aaa;
-    text-decoration: none;
-    margin-right: 30px;
+.nav-bar{
+    width: 35%;
 }
 
-header nav a:hover { /* la propiedad :hover sirve para ejecutar una accion cuando el cursor esta sobre el elemento */
+.nav-bar a {
+    color: #aaa;
+    text-decoration: none;
+}
+
+.nav-bar a:hover { /* la propiedad :hover sirve para ejecutar una accion cuando el cursor esta sobre el elemento */
     color: #fff;
 }
 
+.listaNav {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
     /* Buscador */
+
+.buscador{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
 
 .buscador input{
     width: 40vw; /* vw es una medida relativa que hace que se adapte al ancho de la pantalla */
@@ -110,13 +125,13 @@ header nav a:hover { /* la propiedad :hover sirve para ejecutar una accion cuand
     transition: 0.5s; /* cuando se le hace hover la transicion dura 0,5 segundos */
 }
 
-.peliculas article:hover {
+.card:hover {
     transform: translateY(-10px); /* cuando el cursor pasa por encima, la card se va para arriba 10px */
 }
 
 .card img{
-    width: 200px;
-    height: 300px;
+    width: 200px; /* 10px menos que el contenedor, asi queda lindo */
+    height: 300px; /* la altura de la imagen le ajusta la altura al contenedor */
 }
 
 .card h2 {
@@ -171,7 +186,7 @@ header nav a:hover { /* la propiedad :hover sirve para ejecutar una accion cuand
 
 @media screen and (max-width: 800px) {
     .header {
-        height: 33vh !important;
+        height: 31vh !important;
     }
 
 	header .contenedor {
@@ -180,8 +195,21 @@ header nav a:hover { /* la propiedad :hover sirve para ejecutar una accion cuand
 		text-align: center;
 	}
 
-    .buscador input {
+    .buscador {
+        width: auto;
+    }
+
+    .buscador input{
         width: 70vw;
+    }
+
+    .nav-bar{
+        width: auto;
+    }
+
+    .listaNav{
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .header nav a{
