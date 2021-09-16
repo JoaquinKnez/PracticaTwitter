@@ -1,0 +1,79 @@
+.mainSeries{
+    display: flex;
+    justify-content: space-between;
+}
+
+img{
+    width: auto;
+    height: 500px;
+}
+
+.bannerSeries {
+    margin-left: 40px;
+    width: 30%;
+}
+
+.descripcionSeries{
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.356);
+    margin: 50px 50px 100px 50px;
+    width: 70%;
+    height: 62vh;
+}
+
+.descripcionArticulo{
+    display: flex;
+    justify-content: space-between;
+    height: 56vh;
+    color: aliceblue;
+    flex-direction: column;  
+}
+
+ul li{
+   margin-left: 50px;
+   margin-bottom: 15px;
+   margin-top: 5px;
+}
+
+.ulArticulo {
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+h2{
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+p{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.direccionFavoritos{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.direccionFavoritos button{
+    border-radius:32px;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 20px;
+    font-family: 'Permanent Marker', cursive;
+    background-color: rgba(255, 255, 255, 0.37);
+}
+
+.direccionFavoritos button:hover{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 800px) {
+    .mainSeries{
+        flex-direction: column;
+    }
+    img{
+        width: 300px;
+        height: auto;
+    }
+}
