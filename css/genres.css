@@ -13,16 +13,27 @@
     margin-bottom: 50px;
 }
 
-.seccionGeneros .categorias a{
-    border: 3px rgb(7, 17, 161) solid;
-    background-color: blanchedalmond;
+.categorias a{
     font-size:  30px;
-    padding: 20px;
     text-decoration: none;
     font-family: 'Permanent Marker', cursive;;
-    color:  rgb(7, 17, 161);
-
+    color:  rgb(7, 17, 161); 
 }
+
+.categorias{
+    width: 210px;
+    margin-bottom: 30px;
+    background-color: blanchedalmond;
+    text-align: center;
+    padding: 5px;
+    box-shadow: 3px 3px 10px 2px rgb(103 102 202);
+    transition: 0.5s; /* cuando se le hace hover la transicion dura 0,5 segundos */
+}
+
+.categorias:hover {
+    transform: translateY(-10px); /* cuando el cursor pasa por encima, la card se va para arriba 10px */
+}
+
 
 /* Media querys */
 
@@ -30,11 +41,11 @@
     .seccionGeneros {
         flex-direction: column;
         justify-content: center;
-        text-align: center;
-    }
+        text-align: center} 
+    
 
-    .seccionGeneros .categorias{
+   .categorias{
         margin: 10vw;
-    }
-       
+        width: 70vw} 
+      
 }
