@@ -81,5 +81,6 @@ p{
     .descripcionSeries{
         width: 300px;
         margin-left: 41px;
+        margin-bottom: 0px;
     }
 }
