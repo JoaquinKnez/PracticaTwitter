@@ -126,8 +126,13 @@ body {
     transition: 0.5s; /* cuando se le hace hover la transicion dura 0,5 segundos */
 }
 
+.linkGenero{
+    text-decoration: none;
+}
+
 .card:hover {
     transform: translateY(-10px); /* cuando el cursor pasa por encima, la card se va para arriba 10px */
+    background-color: rgb(10, 1, 1);
 }
 
 .card img{
@@ -140,6 +145,10 @@ body {
     padding: 10px;
     font-family: 'Permanent Marker', cursive;
     color: rgb(7, 17, 161);
+}
+
+.card h2:hover {
+    color: rgb(255, 255, 255);
 }
 
     /* Footer */

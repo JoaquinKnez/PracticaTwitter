@@ -13,10 +13,8 @@
     margin-bottom: 50px;
 }
 
-.categorias a{
-    font-size:  30px;
+.linkGenero{
     text-decoration: none;
-    font-family: 'Permanent Marker', cursive;;
     color:  rgb(7, 17, 161); 
 }
 
@@ -28,10 +26,14 @@
     padding: 5px;
     box-shadow: 3px 3px 10px 2px rgb(103 102 202);
     transition: 0.5s; /* cuando se le hace hover la transicion dura 0,5 segundos */
+    font-size:  30px;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .categorias:hover {
     transform: translateY(-10px); /* cuando el cursor pasa por encima, la card se va para arriba 10px */
+    background-color: black;
+    color: blanchedalmond;
 }
 
 
