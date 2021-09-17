@@ -19,15 +19,16 @@
     background-color: rgba(255, 255, 255, 0.356);
     margin: 50px 50px 100px 50px;
     width: 70%;
-    height: 62vh;
+    height: auto;
 }
 
 .descripcionArticulo{
     display: flex;
     justify-content: space-between;
-    height: 56vh;
+    height: auto;
     color: aliceblue;
     flex-direction: column;  
+    padding: 12px 0px;
 }
 
 .ulArticulo li{
