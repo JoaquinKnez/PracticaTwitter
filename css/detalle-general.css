@@ -30,17 +30,18 @@
     flex-direction: column;  
 }
 
-ul li{
+.ulArticulo li{
    margin-left: 50px;
    margin-bottom: 15px;
    margin-top: 5px;
 }
 
+
 .ulArticulo {
     background-color: rgba(255, 255, 255, 0.26);
 }
 
-h2{
+.tituloArticulo{
     padding-left: 15px;
     margin-bottom: 10px;
 }
