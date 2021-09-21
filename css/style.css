@@ -10,19 +10,16 @@ body {
 }
 
 .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
     width: 95%;
     margin: auto;
 }
 
 .contenedor a {
     text-decoration: none;
-}
-
-.header .contenedor{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100px;
 }
 
     /************************* Logo *********************************/
@@ -32,7 +29,6 @@ body {
     font-weight: normal; /* Se tuvo que aplicar ya que sino estaba muy en negrita y se veia mal */
     color: rgb(7, 17, 161);
     font-size: 40px;
-    text-decoration: none;
 }
 
     /************************* Nav *********************************/
@@ -43,7 +39,6 @@ body {
 
 .nav-bar a {
     color: #aaa;
-    text-decoration: none;
 }
 
 .nav-bar a:hover { /* la propiedad :hover sirve para ejecutar una accion cuando el cursor esta sobre el elemento */
@@ -78,10 +73,9 @@ body {
 
 .buscador button {
     background-color: #fff;
-    color: #141414;
     width: 40px; /* aqui quiero px porque quiero que sea estatico el ancho del icon */
     height: 40px;
-    border: 2px solid black;
+    border: 2px solid #fff;
     border-radius: 90px;
 }
 
@@ -157,7 +151,7 @@ body {
     display: flex;
     justify-content: space-between;
     background: #5b5959;
-    padding: 20px 10px 20px 10px;
+    padding: 20px 10px;
     margin-top: 30px;
 }
 
