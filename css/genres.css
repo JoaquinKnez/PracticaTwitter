@@ -6,18 +6,19 @@
     text-align: center;
     margin-bottom: 50px;
 }
+/* 2 section */
 .seccionGeneros {
     display: flex;
     justify-content: space-around;
     margin: 30px;
     margin-bottom: 50px;
 }
-
+/* etiquetas a */
 .linkGenero{
     text-decoration: none;
     color:  rgb(7, 17, 161); 
 }
-
+/* artículos */
 .categorias{
     width: 210px;
     margin-bottom: 30px;
@@ -37,7 +38,7 @@
 }
 
 
-/* Media querys */
+/* Media queries */
 
 @media screen and (max-width: 800px) {
     .seccionGeneros {
