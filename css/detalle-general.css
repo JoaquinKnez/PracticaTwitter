@@ -2,39 +2,43 @@
     display: flex;
 }
 
-.bannerSeries img{
-    width: auto;
-    height: 500px;
-}
-
 .bannerSeries {
     margin-left: 40px;
     width: 30%;
 }
 
+.bannerSeries img{
+    width: auto;
+    height: 500px;
+}
+
 .descripcionSeries{
-    display: flex;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.356);
     margin: 50px 50px 100px 50px;
+    background-color: rgba(255, 255, 255, 0.356);
     width: 70%;
-    height: auto;
 }
 
 .descripcionArticulo{
     display: flex;
-    justify-content: space-between;
-    height: auto;
-    color: aliceblue;
     flex-direction: column;  
+    color: aliceblue;
     padding: 12px 0px;
 }
 
-.ulArticulo li{
-   margin-left: 50px;
-   margin-bottom: 15px;
-   margin-top: 5px;
+.tituloArticulo{
+    padding-left: 15px;
+    margin-bottom: 10px;
 }
+
+.ulArticulo {
+    background-color: rgba(255, 255, 255, 0.26);
+}
+
+
+.ulArticulo li{
+    margin: 5px 0px 15px 50px;
+}
+
 
 .ulArticulo a{
     text-decoration: none;
@@ -45,18 +49,9 @@
     color: black;
 }
 
-.ulArticulo {
-    background-color: rgba(255, 255, 255, 0.26);
-}
-
-.tituloArticulo{
-    padding-left: 15px;
-    margin-bottom: 10px;
-}
 
 p{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 0px 12px;
 }
 
 .direccionFavoritos{
@@ -67,14 +62,14 @@ p{
 
 .direccionFavoritos button{
     border-radius:32px;
-    border: 2px solid rgb(0, 0, 0);
+    border: solid 2px rgb(0, 0, 0);
     padding: 20px;
     font-family: 'Permanent Marker', cursive;
     background-color: rgba(255, 255, 255, 0.37);
 }
 
 .direccionFavoritos button:hover{
-    border: 2px solid rgb(255, 255, 255);
+    border: solid 2px rgb(255, 255, 255);
 }
 
 @media screen and (max-width: 800px) {
@@ -83,7 +78,6 @@ p{
     }
     img{
         width: 300px !important;
-        height: auto !important;
     }
 
     .descripcionSeries{
