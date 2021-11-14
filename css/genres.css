@@ -10,6 +10,7 @@
 .seccionGeneros {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin: 30px;
     margin-bottom: 50px;
 }
@@ -21,6 +22,10 @@
 /* artículos */
 .categorias{
     width: 210px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 30px;
     background-color: blanchedalmond;
     text-align: center;
