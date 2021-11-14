@@ -135,6 +135,10 @@ body {
 }
 
 .card h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 78px;
     font-size: 20px;
     padding: 10px;
     font-family: 'Permanent Marker', cursive;
@@ -173,12 +177,26 @@ body {
 .conocenos {
     text-align: center;
     align-self: center;
+    margin-left: 60px;
 }
 
 .conocenos h2 {
     margin: 10px;
     font-family: 'Permanent Marker', cursive;
     color: black;
+}
+
+.tmdb {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.imgTmdb {
+    width: 200px;
+    margin: 15px;
 }
 
 .mapa {
@@ -226,6 +244,7 @@ body {
     }
 
     .conocenos {
+        margin-left: 0px;
         margin-bottom: 25px;
         margin-top: 10px;
     }
