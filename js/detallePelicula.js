@@ -18,21 +18,21 @@ fetch(urlPeliculas)
 
     .then(function(data){
         console.log(data);
-        let imagenPelis = document.querySelector('.imagenPeli')
-        let tituloArticulo = document.querySelector('.tituloArticulo')
-        let calificacionPeli = document.querySelector('.calificacionPeli')
-        let duracionPeli = document.querySelector('.duracionPeli')
-        let estrenoPeli = document.querySelector('.estrenoPeli')
-        let generoPeli = document.querySelector('.generoPeli')
-        let sinopsisPeli = document.querySelector('.sinopsisPeli')
+        let imagenPelis = document.querySelector('.imagenPeli');
+        let tituloArticulo = document.querySelector('.tituloArticulo');
+        let calificacionPeli = document.querySelector('.calificacionPeli');
+        let duracionPeli = document.querySelector('.duracionPeli');
+        let estrenoPeli = document.querySelector('.estrenoPeli');
+        let generoPeli = document.querySelector('.generoPeli');
+        let sinopsisPeli = document.querySelector('.sinopsisPeli');
 
         imagenPelis.src = imagen + data.poster_path;
-        tituloArticulo = data.original_title
-        calificacionPeli += data.vote_average
-        duracionPeli += data.runtime
-        estrenoPeli += data.release_date
-        generoPeli += data.genres.name
-        sinopsisPeli += data.overview
+        tituloArticulo.innerText = data.title;
+        calificacionPeli.innerText += data.vote_average;
+        duracionPeli.innerText += `${data.runtime} minutos`;
+        estrenoPeli.innerText += data.release_date;
+        generoPeli.innerHTML += `<a class="genero" href="genres.html?id=${data.id}">${data.genres[0].name}</a>`;
+        sinopsisPeli.innerText += data.overview;
     })
 
     .catch(function(error){
