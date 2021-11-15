@@ -5,11 +5,15 @@ let qsToObject = new URLSearchParams(queryString);
 console.log(qsToObject)
 
 let id = qsToObject.get('id');
+let genre = qsToObject.get('genre');
 console.log(id);
 
 const urlGeneros = `https://api.themoviedb.org/3/genre/${id}?api_key=924a6f16470b17afdd20524ec31c09be`
 
-const peliculasMasValoradas = 'https://api.themoviedb.org/3/movie/top_rated/?api_key=924a6f16470b17afdd20524ec31c09be'
+const peliculasGenero = `
+https://api.themoviedb.org/3/discover/movie?api_key=924a6f16470b17afdd20524ec31c09be&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=${id}&with_watch_monetization_types=flatrate`
+
+const serieGenero = `https://api.themoviedb.org/3/discover/tv?api_key=924a6f16470b17afdd20524ec31c09be&language=en-US&sort_by=popularity.desc&page=1&timezone=America%2FNew_York&with_genres=${id}&include_null_first_air_dates=false&with_watch_monetization_types=flatrate`
 
 const img = 'https://image.tmdb.org/t/p/w342';
 
@@ -24,13 +28,15 @@ fetch(urlGeneros)
         let titleSectionPelis = document.querySelector('.titleSection');
         
         //Paso 2 y 3: actualizar y mandar al DOM
-        titleSectionPelis.innerHTML = data.name
+        titleSectionPelis.innerHTML = genre
     })
     .catch(function(error){
         console.log(error)
     })
 
-fetch(peliculasMasValoradas)
+    console.log(id)
+    
+fetch(peliculasGenero)
     .then(function(response){
         return response.json()
     })
@@ -44,7 +50,6 @@ fetch(peliculasMasValoradas)
         let infoSectionPelis = '';
 
         for(let i=0; i<info.length; i++){
-            if(info[i].genre_ids.includes(18)){
                 infoSectionPelis += `
                         <a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
                             <article class="card">
@@ -52,8 +57,7 @@ fetch(peliculasMasValoradas)
                                     <h2>${info[i].title}</h2>
                             </article>
                         </a>
-                `
-            }
+                `;
         }
 
         //Paso 2 y 3: actualizar y mandar al DOM
@@ -66,20 +70,34 @@ fetch(peliculasMasValoradas)
 
     /* SERIES */
 
-/* fetch(urlSeries)
+    fetch(serieGenero)
     .then(function(response){
         return response.json()
     })
     .then(function(data){
         console.log(data)
+        let info = data.results
         
         //Paso 1: capturar DOM
-        let titleSectionSeries = document.querySelector('.titleSection');
+        let sectionPelis = document.querySelector('#sectionPelis');
+
+        let infoSectionPelis = '';
+
+        for(let i=0; i<info.length; i++){
+                infoSectionPelis += `
+                        <a class="linkGenero" href="detail-serie.html?id=${info[i].id}">
+                            <article class="card">
+                                    <img src="${img + info[i].poster_path}" alt="${info[i].title}">
+                                    <h2>${info[i].name}</h2>
+                            </article>
+                        </a>
+                `;
+        }
 
         //Paso 2 y 3: actualizar y mandar al DOM
-        titleSectionSeries.innerHTML = data.name
+        sectionPelis.innerHTML = infoSectionPelis
 
     })
     .catch(function(error){
         console.log(error)
-    }) */
+    })
