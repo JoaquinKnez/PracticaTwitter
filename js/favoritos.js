@@ -60,14 +60,12 @@ for(let i=0; i<favoritosSerie.length; i++){
         })
         .then(function(data){
             console.log(data);
-            if(data.name !== undefined){
                 contenidoListaSerie += `<a class="linkGenero" href="detail-serie.html?id=${data.id}">
                                         <article class="card">
                                             <img src="${img + data.poster_path}" alt="${data.name}">
                                             <h2>${data.name}</h2>
                                         </article>
                                     </a>`;
-            }
 
             listaSerie.innerHTML = contenidoListaSerie;
         })

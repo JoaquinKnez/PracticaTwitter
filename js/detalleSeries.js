@@ -34,54 +34,46 @@ fetch(urlSeries)
         generoSerie.innerHTML += `<a class="genero" href="genres.html?id=${data.id}">${data.genres[0].name}</a>`
         sinopsisSerie.innerHTML += data.overview;
 
-/* agregado a favoritos  */
+    /* favoritos */
 
-        let favoritos = []; /* array para guardar ids favoritos  */
+    let favoritosSerie = []
 
-        //si hay datos anteriores entonces debemos actualizar con los datos que ya tengo en el storage 
-        let recuperoStorage = localStorage.getItem("favoritos");//retorna un json 
+    //Si hay datos anteriores entonces debemos actualizar el array.
+    let recuperoStorageSerie = localStorage.getItem('favoritosSerie'); //Esto retorna un json.
 
-        if (recuperoStorage != null){
-            favoritos = JSON.parse(recuperoStorage);
+    if (recuperoStorageSerie != null){
+        favoritosSerie = JSON.parse(recuperoStorageSerie);
+    }   
+
+    //Cuando el usuario haga click en el link
+    let linkFavSerie = document.querySelector('#direccionFavoritosSerie');
+
+    //Si el id está en el array de favoritos
+    if(favoritosSerie.includes(id)){
+        linkFavSerie.innerText = 'Eliminar de favoritos'       
+    }
+
+    linkFavSerie.addEventListener('click', function(event){
+        event.preventDefault();
+
+        //Pregunto si el id está en el array
+        if(favoritosSerie.includes(id)){
+            //Quiero sacar el id del array. Necesito saber la posición.
+            let idASacar = favoritosSerie.indexOf(id);
+            //Sacar el id del array
+            favoritosSerie.splice(idASacar, 1);
+            linkFavSerie.innerText = "Añadir a Favoritos";
+
+        } else {
+            //pushear un id al array.
+            favoritosSerie.push(id);
+            linkFavSerie.innerText = 'Eliminar de favoritos'
         }
 
-        let linkFav = document.querySelector('#botonFav') //etiqueta a que tiene lo de agg a favoritos 
-
-        if (favoritos.includes(id)){
-            linkFav.innerText = "Quitar de favoritos"
-        }
-
-        //pushear un id al array --> pushear un id cuando el usuario haga click en el link >> EVENTO
-       
-        linkFav.addEventListener("click", function(evento){
-                evento.preventDefault();
-
-            //sirve para tocas "quitar de favoritos" no se te agregue mas veces
-            if (favoritos.includes(id)){//pregunto si el id está en el array 
-                //quiero sacar el id del array >> indexOf
-                let idASacar = favoritos.indexOf(id); 
-                //sacar el id del array 
-                favoritos.splice(idASacar, 1);
-                linkFav.innerText = "Agregar a favoritos"; 
-            } else {
-                
-           //pushear un id al array 
-            favoritos.push(id);
-            linkFav.innerHTML = "Quitar de favoritos" //es lo que quiero que aparezca despues de que le de click a agg a favoritos 
-            
-            }
-
-
-            //guardar el array en localStorage 
-            //paso 1: lo paso a sting
-            let favoritosAString = JSON.stringify(favoritos);
-            localStorage.setItem("favoritos", favoritosAString); 
-
-            //chequear que los ids se guardan en favoritos 
-            console.log(localStorage)
+        //Guardar el array en localStorage
+            let favoritosAString = JSON.stringify(favoritosSerie);
+            localStorage.setItem('favoritosSerie', favoritosAString);
         })
-
-        //guardar el array en localStorage 
     })
 
     .catch(function(error){
