@@ -27,12 +27,12 @@ fetch(urlPeliculas)
         let sinopsisPeli = document.querySelector('.sinopsisPeli');
 
         imagenPelis.src = imagen + data.poster_path;
-        tituloArticulo.innerText = data.title;
-        calificacionPeli.innerText += data.vote_average;
-        duracionPeli.innerText += `${data.runtime} minutos`;
-        estrenoPeli.innerText += data.release_date;
+        tituloArticulo.innerHTML = data.title;
+        calificacionPeli.innerHTML += data.vote_average;
+        duracionPeli.innerHTML += `${data.runtime} minutos`;
+        estrenoPeli.innerHTML += data.release_date;
         generoPeli.innerHTML += `<a class="genero" href="genres.html?id=${data.id}">${data.genres[0].name}</a>`;
-        sinopsisPeli.innerText += data.overview;
+        sinopsisPeli.innerHTML += data.overview;
     })
 
     .catch(function(error){
