@@ -36,8 +36,8 @@
                 <ul class="listaNav">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="genres.html">Generos</a></li>
-                    <li><a href="detail-serie.html">Series</a></li>
-                    <li><a href="detail-movie.html">Peliculas</a></li>
+                    <li><a href="index.html#Series">Series</a></li>
+                    <li><a href="index.html#Peliculas">Peliculas</a></li>
                     <li><a href="favorite.html">Favoritos</a></li>
                 </ul>
             </nav>
@@ -46,19 +46,21 @@
 
     <main class="mainSeries">
         <section class="bannerSeries">
-            <img src="" alt="">
+            <img src="" alt="" class="imagenPeli">
         </section>
         <section class="descripcionSeries">
             <article class="descripcionArticulo">
                 <h2 class="tituloArticulo"></h2>
                 <ul class="ulArticulo">
-                    <li class="calificacion">Calificación: </li>
-                    <li class="duracion">Duración: </li>
-                    <li class="estreno">Fecha de Estreno: </li>
-                    <li class="genero">Género: </li>
+                    <li class="calificacionPeli">Calificación: </li>
+                    <li class="duracionPeli">Duración: </li>
+                    <li class="estrenoPeli">Fecha de Estreno: </li>
+                    <li class="generoPeli">Género: <a href="detail-genres.html"></a></li>
                 </ul>
-                <p class="resumen"></p>
-                    <a href="favorite.html" class="direccionFavoritos"><button id="direccionFavPeli"><i class="far fa-star"></i>Añadir a favoritos</button></a>
+                <p class="sinopsisPeli"></p>
+                <a href="favorite.html" class="direccionFavoritos">
+                    <button id="direccionFavPeli"><i class="far fa-star"></i>Añadir a favoritos</button>
+                </a>
             </article>
         </section>
     </main>
@@ -75,9 +77,7 @@
         <!-- Mapa -->
         <iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.1865353530457!2d-58.44585618459348!3d-34.548832162103274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb436efe09303%3A0xfb39818e7624ac76!2sDigital%20House!5e0!3m2!1ses!2sar!4v1631387260724!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </footer>
-
-    <script src="./js/detallePeli.js"></script>
-    
+    <script src="./js/detallePelicula.js"></script>
 </body>
 </html>
 
