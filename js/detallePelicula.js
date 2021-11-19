@@ -31,7 +31,7 @@ fetch(urlPeliculas)
         calificacionPeli.innerHTML += data.vote_average;
         duracionPeli.innerHTML += `${data.runtime} minutos`;
         estrenoPeli.innerHTML += data.release_date;
-        generoPeli.innerHTML += `<a class="genero" href="genres.html?id=${data.id}">${data.genres[0].name}</a>`;
+        generoPeli.innerHTML += `<a class="genero" href="genres.html">${data.genres[0].name}</a>`;
         sinopsisPeli.innerHTML += data.overview;
 
         let favoritos = []

@@ -31,7 +31,7 @@ fetch(urlSeries)
         calificacionSerie.innerHTML += data.vote_average;
         duracionSerie.innerHTML += data.number_of_seasons;
         estrenoSerie.innerHTML += data.first_air_date;
-        generoSerie.innerHTML += `<a class="genero" href="genres.html?id=${data.id}">${data.genres[0].name}</a>`
+        generoSerie.innerHTML += `<a class="genero" href="genres.html">${data.genres[0].name}</a>`
         sinopsisSerie.innerHTML += data.overview;
 
     /* favoritos */
