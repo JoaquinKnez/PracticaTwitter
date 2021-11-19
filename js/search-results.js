@@ -35,7 +35,7 @@ let palabra = qsObject.get('buscador') //estoy seleccionando solamente la palabr
 
 
 const key = "924a6f16470b17afdd20524ec31c09be";
-let url = `https://api.themoviedb.org/3/search/movie?api_key=${key}&language=es&query=${palabra}`;
+let url = `https://api.themoviedb.org/3/search/multi?api_key=${key}&language=es&query=${palabra}`;
 
 
 let sectionResultadoBusqueda = document.querySelector(".peliculas");
@@ -56,11 +56,19 @@ fetch(url)
             sectionResultadoBusqueda.innerHTML += `<p class="titleSection">No hay resultados para su búsqueda</p>`;
         } else {
             for (let i = 0; i < info.length; i++) {
-                resultados += `<a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
-                <article class="card">
-                        <img src="${imgResult + info[i].poster_path}" alt="${info[i].title}">
-                        <h2>${info[i].title}</h2>
-                </article>`
+                if(info[i].name == undefined){
+                    resultados += `<a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
+                    <article class="card">
+                            <img src="${imgResult + info[i].poster_path}" alt="${info[i].title}">
+                            <h2>${info[i].title}</h2>
+                    </article>`
+                } else {
+                    resultados += `<a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
+                    <article class="card">
+                            <img src="${imgResult + info[i].poster_path}" alt="${info[i].title}">
+                            <h2>${info[i].name}</h2>
+                    </article>`
+                }
             
                 sectionResultadoBusqueda.innerHTML = resultados; 
              }  }
