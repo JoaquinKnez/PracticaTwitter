@@ -24,11 +24,12 @@
             <a href="index.html"><h2 class="logotipo">pelisYa</h2></a>
             <!-- Buscador -->
             <div class="buscador">
-                <form action="./search-results.html">
-                        <input type="text" name="buscador" placeholder="Buscador...">
+                <form method="GET" action="search-results.html">
+                        <input class= "search" type="text" name="buscador" placeholder="Buscador..." value="">
                         <button type="submit"><i class="fas fa-search"></i></button>
-                    </form>
-                </div>
+                </form>
+                <p class="mensaje"></p>
+            </div>
             <!-- Nav -->
             <nav class="nav-bar">
                 <ul class="listaNav">
@@ -80,5 +81,6 @@
     </footer>
 
     <script src="./js/generos.js"></script>
+    <script src="./js/search-results.js"></script>
 </body>
 </html>
