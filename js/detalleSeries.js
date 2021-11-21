@@ -1,8 +1,6 @@
 let queryString = location.search;
-console.log(queryString)
 
 let qsToObject = new URLSearchParams(queryString);
-console.log(qsToObject)
 
 let id = qsToObject.get('id');
 console.log(id);
