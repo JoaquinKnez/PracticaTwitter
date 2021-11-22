@@ -7,6 +7,7 @@ console.log(qsToObject)
 let id = qsToObject.get('id');
 let genre = qsToObject.get('genre');
 console.log(id);
+console.log(genre);
 
 const urlGeneros = `https://api.themoviedb.org/3/genre/${id}?api_key=924a6f16470b17afdd20524ec31c09be`
 
@@ -24,17 +25,16 @@ fetch(urlGeneros)
     .then(function(data){
         console.log(data)
         
-        //Paso 1: capturar DOM
+        // capturar DOM
         let titleSectionPelis = document.querySelector('.titleSection');
         
-        //Paso 2 y 3: actualizar y mandar al DOM
-        titleSectionPelis.innerHTML = genre
+        // actualizar y mandar al DOM
+        titleSectionPelis.innerHTML = genre /* tuvimos que usar la queryString de genre ya que data.name tenia conflicto con los titulos de generos que tenian 2 o mas palabras */
     })
     .catch(function(error){
         console.log(error)
     })
 
-    console.log(id)
     
 fetch(peliculasGenero)
     .then(function(response){
@@ -50,7 +50,7 @@ fetch(peliculasGenero)
         let infoSectionPelis = '';
 
         for(let i=0; i<info.length; i++){
-            if(info[i].poster_path !== null){
+            if(info[i].poster_path !== null){ /* para sacar las peliculas que no tenian foto y que solo nos renderice las que si */
                 infoSectionPelis += `
                         <a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
                             <article class="card">
