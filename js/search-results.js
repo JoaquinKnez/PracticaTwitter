@@ -56,14 +56,16 @@ fetch(url)
             sectionResultadoBusqueda.innerHTML += `<p class="titleSection">No hay resultados para su búsqueda</p>`;
         } else {
             for (let i = 0; i < info.length; i++) {
-                if(info[i].name == undefined){
+                if(info[i].poster_path == null){
+                    resultados += '';
+                } else if(info[i].name == undefined){
                     resultados += `<a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
                     <article class="card">
                             <img src="${imgResult + info[i].poster_path}" alt="${info[i].title}">
                             <h2>${info[i].title}</h2>
                     </article>`
                 } else {
-                    resultados += `<a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
+                    resultados += `<a class="linkGenero" href="detail-serie.html?id=${info[i].id}">
                     <article class="card">
                             <img src="${imgResult + info[i].poster_path}" alt="${info[i].title}">
                             <h2>${info[i].name}</h2>

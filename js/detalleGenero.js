@@ -50,6 +50,7 @@ fetch(peliculasGenero)
         let infoSectionPelis = '';
 
         for(let i=0; i<info.length; i++){
+            if(info[i].poster_path !== null){
                 infoSectionPelis += `
                         <a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
                             <article class="card">
@@ -58,6 +59,7 @@ fetch(peliculasGenero)
                             </article>
                         </a>
                 `;
+            }
         }
 
         //Paso 2 y 3: actualizar y mandar al DOM
@@ -84,6 +86,7 @@ fetch(peliculasGenero)
         let infoSectionPelis = '';
 
         for(let i=0; i<info.length; i++){
+            if(info[i].poster_path !== null){
                 infoSectionPelis += `
                         <a class="linkGenero" href="detail-serie.html?id=${info[i].id}">
                             <article class="card">
@@ -92,6 +95,7 @@ fetch(peliculasGenero)
                             </article>
                         </a>
                 `;
+            }
         }
 
         //Paso 2 y 3: actualizar y mandar al DOM
