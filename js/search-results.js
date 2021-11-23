@@ -38,11 +38,11 @@ const key = "924a6f16470b17afdd20524ec31c09be";
 let url = `https://api.themoviedb.org/3/search/multi?api_key=${key}&language=es&query=${palabra}`;
 
 
-let sectionResultadoBusqueda = document.querySelector(".peliculas");
+let sectionResultadoBusqueda = document.querySelector(".peliculas");//section vacía del html
 
 const imgResult = 'https://image.tmdb.org/t/p/w342'
 
-let resultados = []; //array para meteer los resultados 
+let resultados = []; //array para meter los resultados 
 
 fetch(url) 
     .then(function(response){
@@ -67,7 +67,7 @@ fetch(url)
                 } else {
                     resultados += `<a class="linkGenero" href="detail-serie.html?id=${info[i].id}">
                     <article class="card">
-                            <img src="${imgResult + info[i].poster_path}" alt="${info[i].title}">
+                            <img src="${imgResult + info[i].poster_path}" alt="${info[i].name}">
                             <h2>${info[i].name}</h2>
                     </article>`
                 }
