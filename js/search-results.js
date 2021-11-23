@@ -10,11 +10,11 @@ formulario.addEventListener("submit",function (evento) {
 
     //chequeo que el campo no esté vacio ' '
     if(inputField.value == ""){
-        mensaje.innerHTML = `El campo es obligatorio`
+        mensaje.innerText = `El campo es obligatorio`
         mensaje.style.color = "red";
     //chequear si puso más de 3 caracteres
     } else if (inputField.value.length < 3){
-        mensaje.innerHTML = `Ingrese al menos 3 caracteres`
+        mensaje.innerText = `Ingrese al menos 3 caracteres`
         mensaje.style.color = "red";
     } else {
         formulario.submit();
