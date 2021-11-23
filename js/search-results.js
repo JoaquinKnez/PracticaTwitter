@@ -56,9 +56,9 @@ fetch(url)
             sectionResultadoBusqueda.innerHTML += `<p class="titleSection">No hay resultados para su búsqueda</p>`;
         } else {
             for (let i = 0; i < info.length; i++) {
-                if(info[i].poster_path == null){
+                if(info[i].poster_path == null){ /* eliminamos los que no tienen foto */
                     resultados += '';
-                } else if(info[i].name == undefined){
+                } else if(info[i].name == undefined){ /* si info.name es undefined significa que es una pelicula. hay que diferenciarlos ya que tienen diferentes propiedades como el titulo. */
                     resultados += `<a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
                     <article class="card">
                             <img src="${imgResult + info[i].poster_path}" alt="${info[i].title}">

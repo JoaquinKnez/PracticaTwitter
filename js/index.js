@@ -1,6 +1,6 @@
 const urlPopulares = 'https://api.themoviedb.org/3/movie/popular/?api_key=924a6f16470b17afdd20524ec31c09be'
 
-const img = 'https://image.tmdb.org/t/p/w342';
+const img = 'https://image.tmdb.org/t/p/w342'; /* Primer parte de la url de la imagen, se complementa con el poster_path */
 
 const series = 'https://api.themoviedb.org/3/tv/popular?api_key=924a6f16470b17afdd20524ec31c09be'
 
@@ -15,15 +15,15 @@ fetch(urlPopulares)
         return response.json();
     })
     .then(function(data){
-        let info = data.results;
+        let info = data.results; /* utilizo la variable info para abreviar data.results y que sea comodo */
 
-        let sectionPelis = document.querySelector('#peliculasPopulares');
+        let sectionPelis = document.querySelector('#peliculasPopulares'); /* Capturo el elemento del DOM */
 
-        let infoPelis = '';
+        let infoPelis = ''; /* Creo una variable para almacenar toda la información que se va a recorrer en el for */
 
         for(let i=0; i<5; i++){
             infoPelis += `
-                    <a class="linkGenero" href="detail-movie.html?id=${info[i].id}">
+                    <a class="linkGenero" href="detail-movie.html?id=${info[i].id}"> 
                         <article class="card">
                                 <img src="${img + info[i].poster_path}" alt="${info[i].title}">
                                 <h2>${info[i].title}</h2>
@@ -32,7 +32,7 @@ fetch(urlPopulares)
             `
         }
 
-        sectionPelis.innerHTML = infoPelis
+        sectionPelis.innerHTML = infoPelis /* renderizo todo lo recorrido en el for y lo ubico en la seccion que capture */
     })
     .catch(function(error){
         console.log(error)
