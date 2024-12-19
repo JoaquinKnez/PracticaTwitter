@@ -1,6 +1,6 @@
 const urlPopulares = 'https://api.themoviedb.org/3/movie/popular/?api_key=924a6f16470b17afdd20524ec31c09be'
 
-const img = 'https://image.tmdb.org/t/p/w342'; /* Primer parte de la url de la imagen, se complementa con el poster_path */
+const img = 'https://image.tmdb.org/t/p/w342'; /* Primera parte de la url de la imagen, se complementa con el poster_path */
 
 const series = 'https://api.themoviedb.org/3/tv/popular?api_key=924a6f16470b17afdd20524ec31c09be'
 
