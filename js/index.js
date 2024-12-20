@@ -1,3 +1,7 @@
+import * as amplitude from '@amplitude/analytics-browser';
+
+amplitude.init('a3e32566cfa7313a740bf9643214b0e3', {"autocapture":true});
+
 const urlPopulares = 'https://api.themoviedb.org/3/movie/popular/?api_key=924a6f16470b17afdd20524ec31c09be'
 
 const img = 'https://image.tmdb.org/t/p/w342'; /* Primera parte de la url de la imagen, se complementa con el poster_path */
